@@ -17,4 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function(){
+    return view('user.home');
+});
+
+Route::get('/artworkList', function(){
+    return view('user.artworkList');
+})->name('artworkListPage');
+
 
